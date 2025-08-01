@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fiche de contact d'urgence</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 2em auto;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+    .notice {
+      margin-top: 2em;
+      padding: 10px;
+      background-color: #f3f3f3;
+      border-left: 4px solid #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fiche de contact d'urgence</h1>
+
+  <form>
+    <label for="nom">Nom du membre</label>
+    <input type="text" id="nom" name="nom">
+
+    <label for="adresse">Adresse complète</label>
+    <input type="text" id="adresse" name="adresse">
+
+    <label for="contact">Personne à contacter en cas d’urgence</label>
+    <input type="text" id="contact" name="contact">
+
+    <label for="lien">Lien avec le membre</label>
+    <input type="text" id="lien" name="lien">
+
+    <label for="telephone">Téléphone</label>
+    <input type="text" id="telephone" name="telephone">
+
+    <label for="courriel">Courriel</label>
+    <input type="email" id="courriel" name="courriel">
+
+    <label for="autres">Autres contacts pertinents</label>
+    <textarea id="autres" name="autres" rows="3"></textarea>
+  </form>
+
+  <div class="notice">
+    <p><strong>Important :</strong> Le membre s'engage à informer le conseil d'administration de toute absence prolongée (plus de 60 jours) en précisant les dates approximatives de départ et de retour ainsi qu’un contact en cas d’urgence pendant cette période.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Index – Décès du locataire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 2em auto;
+    }
+    .accordion {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1em;
+    }
+    .accordion-header {
+      background-color: #e6e6e6;
+      cursor: pointer;
+      padding: 10px;
+      font-weight: bold;
+      border-bottom: 1px solid #ccc;
+    }
+    .accordion-content {
+      display: none;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #005a9c;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Décès du locataire – Documents de référence</h1>
+
+<div class="accordion">
+  <div class="accordion-header">1. Q/R – Le décès du locataire et son bail (HTML interactif)</div>
+  <div class="accordion-content">
+    <a href="questions-reponses.html" target="_blank" class="button">📄 Ouvrir le document interactif</a>
+  </div>
+</div>
+
+<div class="accordion">
+  <div class="accordion-header">2. Résumé – Décès du locataire (PDF)</div>
+  <div class="accordion-content">
+    <a href="deces-locataire-resume.pdf" target="_blank" class="button">📄 Ouvrir le PDF</a>
+  </div>
+</div>
+
+<div class="accordion">
+  <div class="accordion-header">3. Gestion du logement en cas de décès – FHCQ Juin 2025 (PDF)</div>
+  <div class="accordion-content">
+    <a href="gestion-logement-deces-juin2025.pdf" target="_blank" class="button">📄 Ouvrir le PDF</a>
+  </div>
+</div>
+
+<div class="accordion">
+  <div class="accordion-header">4. Formulaire TAL-804-E – Avis en cas de décès du locataire (PDF)</div>
+  <div class="accordion-content">
+    <a href="tal-804-avis-deces.pdf" target="_blank" class="button">📄 Ouvrir le PDF</a>
+  </div>
+</div>
+
+<div class="accordion">
+  <div class="accordion-header">5. Fiche de contact d'urgence du membre (HTML)</div>
+  <div class="accordion-content">
+    <a href="fiche-contact-urgence.html" target="_blank" class="button">📄 Ouvrir la fiche de contact</a>
+  </div>
+</div>
+
+<script>
+  const headers = document.querySelectorAll('.accordion-header');
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
